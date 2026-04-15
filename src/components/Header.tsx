@@ -17,7 +17,7 @@ const Header = () => {
         <h4 className="uppercase font-medium text-2xl">Profile </h4>
         <hr className="border-[#444] my-4" />
         <p>
-          Profile Frontend Developer with experience building interactive web
+          Frontend Developer with experience building interactive web
           applications using React, TypeScript, JavaScript, and Tailwind.
           Focused on clean design, reusable components, and seamless user
           experiences.
