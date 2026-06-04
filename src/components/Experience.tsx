@@ -8,9 +8,12 @@ const Experience = () => {
       company: "RWA Inc | Development & Internship",
       period: "04/2026–Present",
       responsibilities: [
-        "Learning company development workflow and frontend architecture",
-        "Collaborating with the team to understand frontend architecture and best practices",
-        "Participating in training and technical discussions",
+        "Built and delivered multiple dashboard pages for an AI-native IDE platform (Enter App) including a Projects management page with grid/​list view toggle, a Connectors page with dynamic integration management, and a Connector detail page with real-time connect/​disconnect functionality",
+        "Implemented dynamic routing with Next.js App Router, including static and dynamic routes (/​connectors/​[id]) for scalable page architecture",
+
+        "Collaborated with a cross-functional remote team using Git branching, pull requests, and conflict resolution workflows on GitHub",
+        "Built reusable UI components with TypeScript, React, and custom CSS design tokens following a shared design system",
+        "Translated Figma designs into pixel-perfect, responsive interfaces maintaining consistency across the product",
       ],
     },
     {
@@ -55,7 +58,7 @@ const Experience = () => {
 
   return (
     <div className="text-white">
-      <h4 className="uppercase font-medium text-2xl mt-13 mb-5">
+      <h4 className="mb-5 text-2xl font-medium uppercase mt-13">
         Work Experience
       </h4>
       <hr className="border-[#444] my-4" />
@@ -67,7 +70,7 @@ const Experience = () => {
             <span className="text-[1.4rem]"> {job.company}</span>
             <i className="block">{job.period}</i>
           </p>
-          <ul className="list-disc pl-8">
+          <ul className="pl-8 list-disc">
             {job.responsibilities.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
@@ -79,7 +82,7 @@ const Experience = () => {
 
       {projects.map((project, index) => (
         <div key={index} className="mb-7 ">
-          <div className="flex gap-3 items-center mt-3">
+          <div className="flex items-center gap-3 mt-3">
             <p>
               <span className="text-[1rem] font-medium">{project.name}</span>
             </p>
@@ -92,7 +95,7 @@ const Experience = () => {
               </a>
             </div>
           </div>
-          <ul className="list-disc pl-8">
+          <ul className="pl-8 list-disc">
             {project.description.map((desc, i) => (
               <li key={i}>{desc}</li>
             ))}
