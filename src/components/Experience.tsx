@@ -31,27 +31,26 @@ const Experience = () => {
 
   const projects = [
     {
-      name: "Far-away App",
-      live: "https://farawayapplication.netlify.app/",
-      code: "https://github.com/spr-tech/react-far-away-app",
+      name: "Energy Tracker App",
+      live: "https://smart-energy-tracker-app.netlify.app/login",
+      code: "https://github.com/spr-tech/smart-energy-tracker",
       description: [
-        "Built an interactive travel list application to manage and organize trip items",
-        "Implemented dynamic state management for adding, updating, and deleting items",
-        "Designed a clean and responsive UI for seamless user interaction",
-        "Utilized reusable React components to improve scalability and maintainability",
-        "Applied conditional rendering to enhance user experience and feedback",
+        "Built a smart energy consumption tracking application to monitor electricity usage and costs",
+        "Implemented CRUD functionality for creating, updating, and deleting energy readings",
+        "Integrated external APIs to fetch and manage energy consumption data",
+        "Developed interactive dashboards with charts and analytics for tracking usage trends",
+        "Added goal-setting, usage alerts, and local storage persistence to help users manage energy consumption effectively",
       ],
     },
     {
-      name: "Bill Split App",
-      live: "https://billspiltapp.netlify.app/",
-      code: "https://github.com/spr-tech/Bill-split",
+      name: "Enter — AI Native IDE",
+      live: "https://enter-app-eta.vercel.app/",
       description: [
-        "Developed a bill-splitting application to calculate and manage shared expenses",
-        "Implemented logic for tracking balances and splitting costs between users",
-        "Managed application state to handle real-time updates and user inputs",
-        "Designed reusable components for better code structure and efficiency",
-        "Focused on intuitive UI to simplify financial interactions for users",
+        "Built the AI-facing dashboard screens for an AI-native cloud IDE used by developers to ship products faster",
+        "Implemented a multi-page dashboard with sidebar navigation, workspace management, and responsive layout across all screen sizes",
+        "Developed a real-time AI chat interface with message threading, typing indicators, and auto-scroll behaviour",
+        "Built a full project management flow including project creation, GitHub repository import, and multi-step forms",
+        "Created a connectors system allowing users to integrate external services like GitHub, Notion, and Stripe via MCP protocol",
       ],
     },
   ];
@@ -87,12 +86,24 @@ const Experience = () => {
               <span className="text-[1rem] font-medium">{project.name}</span>
             </p>
             <div className="flex gap-2">
-              <a href={project.live} target="_blank" rel="noopener noreferrer">
-                <FaGithub size={20} />
-              </a>
-              <a href={project.code} target="_blank" rel="noopener noreferrer">
-                <SiNetlify size={20} />
-              </a>
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiNetlify size={20} />
+                </a>
+              )}
+              {project.code && (
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={20} />
+                </a>
+              )}
             </div>
           </div>
           <ul className="pl-8 list-disc">

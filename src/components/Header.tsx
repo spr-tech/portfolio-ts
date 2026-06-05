@@ -2,25 +2,27 @@ const Header = () => {
   return (
     <div className="text-white ">
       <div className="flex flex-col gap-2 text-white ">
-        <span className="font-light text-4xl uppercase tracking-wide">
+        <span className="text-4xl font-light tracking-wide uppercase">
           Muizz
         </span>
-        <span className="font-medium text-5xl uppercase tracking-wide">
+        <span className="text-5xl font-medium tracking-wide uppercase">
           Jamiu
         </span>
         <span className="font-normal text-[1.3rem]">
-          Junior frontend developer
+           Frontend developer
         </span>
       </div>
 
       <div className="flex flex-col gap-3 mt-13">
-        <h4 className="uppercase font-medium text-2xl">Profile </h4>
+        <h4 className="text-2xl font-medium uppercase">Profile </h4>
         <hr className="border-[#444] my-4" />
         <p>
-          Frontend Developer with experience building interactive web
-          applications using React, TypeScript, JavaScript, and Tailwind.
-          Focused on clean design, reusable components, and seamless user
-          experiences.
+          Frontend Developer who enjoys transforming ideas into fast,
+          responsive, and engaging web experiences using React, Next.js,
+          TypeScript, and Tailwind CSS. Passionate about solving problems,
+          learning deeply, and building products that create real value for
+          users. Dedicated to continuous growth and delivering high-quality,
+          maintainable solutions.
         </p>
       </div>
     </div>
