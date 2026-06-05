@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import { SiNetlify } from "react-icons/si";
-
+import { SiNetlify, SiVercel } from "react-icons/si";
 const Experience = () => {
   const workExperience = [
     {
@@ -45,6 +44,7 @@ const Experience = () => {
     {
       name: "Enter — AI Native IDE",
       live: "https://enter-app-eta.vercel.app/",
+      liveIcon: "vercel",
       description: [
         "Built the AI-facing dashboard screens for an AI-native cloud IDE used by developers to ship products faster",
         "Implemented a multi-page dashboard with sidebar navigation, workspace management, and responsive layout across all screen sizes",
@@ -92,7 +92,11 @@ const Experience = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SiNetlify size={20} />
+                  {project.liveIcon ? (
+                    <SiVercel size={20} />
+                  ) : (
+                    <SiNetlify size={20} />
+                  )}
                 </a>
               )}
               {project.code && (
