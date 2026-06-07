@@ -31,7 +31,7 @@ const Experience = () => {
   const projects = [
     {
       name: "Energy Tracker App",
-      live: "https://smart-energy-tracker-app.netlify.app/login",
+      live: "https://smart-energy-tracker-app.netlify.app/",
       code: "https://github.com/spr-tech/smart-energy-tracker",
       description: [
         "Built a smart energy consumption tracking application to monitor electricity usage and costs",
