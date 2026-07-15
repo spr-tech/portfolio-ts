@@ -30,8 +30,9 @@ const Experience = () => {
 
   const projects = [
     {
-      name: "FlowBoard — Project Management Platform",
+      name: "FlowBoard → Project Management Platform",
       live: "https://flowboard-app-mu.vercel.app/",
+      liveIcon: "vercel",
       code: "https://github.com/spr-tech/flowboard",
       description: [
         "Built a full-stack project management platform inspired by Linear and Trello, enabling teams to organize projects and collaborate efficiently",
@@ -54,7 +55,7 @@ const Experience = () => {
       ],
     },
     {
-      name: "Enter — AI Native IDE",
+      name: "Enter → AI Native IDE",
       live: "https://enter-app-eta.vercel.app/",
       liveIcon: "vercel",
       description: [
