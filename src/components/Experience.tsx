@@ -30,6 +30,18 @@ const Experience = () => {
 
   const projects = [
     {
+      name: "FlowBoard — Project Management Platform",
+      live: "https://flowboard-app-mu.vercel.app/",
+      code: "https://github.com/spr-tech/flowboard",
+      description: [
+        "Built a full-stack project management platform inspired by Linear and Trello, enabling teams to organize projects and collaborate efficiently",
+        "Implemented complete project and task management with CRUD operations, custom project colors, priorities, due dates, and interactive Kanban boards with drag-and-drop task movement",
+        "Designed a responsive dashboard featuring project analytics, recent activity, a fixed top navigation, collapsible sidebar, and polished UI inspired by modern SaaS applications",
+        "Developed secure server-side actions using Next.js App Router and Prisma with role-based access control, ensuring only project owners and members can manage project resources",
+        "Integrated PostgreSQL with Prisma ORM, authentication, project memberships, task assignments, and automatic cache revalidation for a seamless collaborative experience",
+      ],
+    },
+    {
       name: "Energy Tracker App",
       live: "https://smart-energy-tracker-app.netlify.app/",
       code: "https://github.com/spr-tech/smart-energy-tracker",
