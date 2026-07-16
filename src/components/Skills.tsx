@@ -56,7 +56,7 @@ const Skills = () => {
   return (
     <div className="text-white">
       <section className="">
-        <h4 className="uppercase font-medium text-2xl mt-13 mb-5">
+        <h4 className="mb-5 text-2xl font-medium uppercase mt-13">
           Technical Skills
         </h4>
         <hr className="border-[#444] my-4" />
@@ -76,7 +76,7 @@ const Skills = () => {
       </section>
 
       <section>
-        <h4 className="uppercase font-medium text-2xl mt-13 mb-5">
+        <h4 className="mb-5 text-2xl font-medium uppercase mt-13">
           Soft Skills
         </h4>
         <hr className="border-[#444] my-4" />
@@ -84,7 +84,7 @@ const Skills = () => {
         {softSkillsData.map((skill, index) => (
           <div className="other-skill-wrapper-outer" key={index}>
             <h5 className="text-[1.1rem] font-medium mt-5">{skill.title}</h5>
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex flex-wrap gap-2">
               {skill.items.map((item, i) => (
                 <span className="bg-[#1f2937] p-1 rounded-sm mt-1" key={i}>
                   {item}
@@ -99,3 +99,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
+      

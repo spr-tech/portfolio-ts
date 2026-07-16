@@ -5,13 +5,13 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const LeftInfo = () => {
   return (
-    <div className="flex flex-col gap-10 p-10 text-white bg-gray-800 rounded-2xl lg:rounded-none lg:fixed lg:top-0 lg:left-0 lg:h-screen lg:w-1/3 ">
+    <div className="flex flex-col gap-4 p-10 text-white bg-gray-800 rounded-2xl lg:rounded-none lg:fixed lg:top-0 lg:left-0 lg:h-screen lg:w-1/3 ">
       {" "}
       <div className="flex justify-center">
         <img
           src="./img/Muizz Jamiu.png"
           alt="muizzpic"
-          className="w-70 h-70 md:w-70 md:h-70 lg:w-100 lg:h-100 rounded-full object-cover align-center border-4 border-[#888]"
+          className="w-70 h-70 md:w-70 md:h-70 lg:w-70 lg:h-70 rounded-full object-cover align-center border-4 border-[#888]"
         />
       </div>
       <div className="flex flex-col gap-3">
@@ -19,7 +19,7 @@ const LeftInfo = () => {
         <hr className="border-gray-700" />
 
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 transition-all cursor-pointer hover:translate-x-1 ">
             <FaEnvelope size={20} />
             <a href="mailto:opeyemimuizz@gmail.com">opeyemimuizz@gmail.com</a>
           </div>
@@ -29,7 +29,7 @@ const LeftInfo = () => {
             <span>Lagos, Nigeria</span>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 transition-all cursor-pointer hover:translate-x-1 ">
             <FaGithub size={20} />
             <a
               href="https://github.com/spr-tech"
@@ -40,12 +40,14 @@ const LeftInfo = () => {
             </a>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 transition-all cursor-pointer hover:translate-x-1 ">
+            {" "}
             <FaLinkedin size={20} />
             <a
               href="https://linkedin.com/in/muizz-opeyemi"
               target="_blank"
               rel="noopener noreferrer"
+              className=""
             >
               linkedin.com/in/muizz-opeyemi
             </a>

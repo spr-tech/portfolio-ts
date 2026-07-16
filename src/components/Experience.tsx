@@ -106,9 +106,15 @@ const Experience = () => {
                   rel="noopener noreferrer"
                 >
                   {project.liveIcon ? (
-                    <SiVercel size={20} />
+                    <SiVercel
+                      size={20}
+                      className="transition-all duration-100 ease-in-out hover:-translate-y-1 "
+                    />
                   ) : (
-                    <SiNetlify size={20} />
+                    <SiNetlify
+                      size={20}
+                      className="transition-all duration-100 ease-in-out hover:-translate-y-1 "
+                    />
                   )}
                 </a>
               )}
@@ -118,7 +124,10 @@ const Experience = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub size={20} />
+                  <FaGithub
+                    size={20}
+                    className="transition-all duration-100 ease-in-out hover:-translate-y-1 "
+                  />
                 </a>
               )}
             </div>
